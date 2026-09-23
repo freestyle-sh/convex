@@ -3,6 +3,11 @@
 Manage long-lived [Freestyle VMs](https://www.freestyle.sh/docs/vms) from Convex
 actions while keeping a reactive record of each VM in Convex.
 
+Freestyle VMs are the most powerful VMs for AI agents. They are full Linux
+machines with root access, Docker, systemd, nested virtualization, FUSE, eBPF,
+and full Linux networking. VMs start quickly, preserve memory when paused, and
+can be snapshotted or branched from an exact machine state.
+
 The component provides:
 
 - idempotent VM creation with retry recovery;
