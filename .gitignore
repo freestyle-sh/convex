@@ -1,0 +1,7 @@
+dist
+node_modules
+.convex
+*.local
+*.log
+*.tgz
+*.tsbuildinfo

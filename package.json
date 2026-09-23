@@ -1,0 +1,82 @@
+{
+  "name": "@freestyle-sh/convex",
+  "version": "0.1.0",
+  "description": "Manage durable Freestyle VMs from Convex actions",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freestyle-sh/convex.git"
+  },
+  "homepage": "https://www.freestyle.sh/docs",
+  "keywords": [
+    "convex",
+    "component",
+    "freestyle",
+    "sandbox",
+    "virtual-machine"
+  ],
+  "files": [
+    "dist",
+    "src/component",
+    "!src/component/**/*.test.ts",
+    "src/test.ts"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/client/index.d.ts",
+      "default": "./dist/client/index.js"
+    },
+    "./package.json": "./package.json",
+    "./test": "./src/test.ts",
+    "./_generated/component.js": {
+      "types": "./dist/component/_generated/component.d.ts"
+    },
+    "./_generated/component": {
+      "types": "./dist/component/_generated/component.d.ts"
+    },
+    "./convex.config.js": {
+      "types": "./dist/component/convex.config.d.ts",
+      "default": "./dist/component/convex.config.js"
+    },
+    "./convex.config": {
+      "types": "./dist/component/convex.config.d.ts",
+      "default": "./dist/component/convex.config.js"
+    }
+  },
+  "types": "./dist/client/index.d.ts",
+  "module": "./dist/client/index.js",
+  "scripts": {
+    "build": "tsc --project tsconfig.build.json",
+    "build:codegen": "convex codegen --component-dir ./src/component && npm run build",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint .",
+    "prepare": "npm run build",
+    "test": "vitest run --typecheck",
+    "typecheck": "tsc --noEmit && tsc --project example/convex"
+  },
+  "dependencies": {
+    "freestyle": "^0.2.14"
+  },
+  "peerDependencies": {
+    "convex": "^1.43.0"
+  },
+  "devDependencies": {
+    "@convex-dev/eslint-plugin": "^4.0.0",
+    "@edge-runtime/vm": "^5.0.0",
+    "@eslint/js": "^9.39.5",
+    "@types/node": "^24.13.3",
+    "convex": "^1.44.0",
+    "convex-test": "^0.0.55",
+    "eslint": "^9.39.5",
+    "globals": "^17.9.0",
+    "prettier": "^3.9.0",
+    "typescript": "^6.0.2",
+    "typescript-eslint": "^8.66.0",
+    "vitest": "4.1.11"
+  }
+}

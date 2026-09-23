@@ -1,0 +1,36 @@
+name: Freestyle Convex
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825a76410c181273ba90b1 # v7
+
+      - name: Set up Node.js
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          cache: npm
+          cache-dependency-path: package-lock.json
+          node-version: "24.x"
+
+      - name: Install dependencies
+        run: npm ci --legacy-peer-deps
+
+      - name: Validate
+        run: |
+          npm run build
+          npm run typecheck
+          npm test
+          npm run lint
+          npm run format:check
+          npm pack --dry-run
