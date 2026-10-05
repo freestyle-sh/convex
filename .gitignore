@@ -5,3 +5,6 @@ node_modules
 *.log
 *.tgz
 *.tsbuildinfo
+.vercel
+.tanstack
+.env*

@@ -1,0 +1,11 @@
+{
+  "mode": "isolation",
+  "networkResults": [],
+  "pythonDurationMs": 48,
+  "reused": false,
+  "runId": "jn79f8cbymkvp7n2zrtyxfw0zh8fdqw9",
+  "status": "ok",
+  "stderr": "",
+  "stdout": "isolated True True\nseeded\n",
+  "totalDurationMs": 632
+}

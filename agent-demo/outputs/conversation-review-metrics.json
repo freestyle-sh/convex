@@ -1,0 +1,214 @@
+[
+  {
+    "threadId": "m975hewqfvpkh5zk6j031ccqgn8fdfpt",
+    "prompt": "hey tell me about my orders in the past week\n",
+    "state": "complete",
+    "failedMessages": 0,
+    "hasFinalAnswer": false,
+    "elapsedSeconds": 74.834,
+    "toolCalls": 7,
+    "notebookExecutions": 6,
+    "skippedDuplicates": 0,
+    "errors": 3,
+    "networkRequests": 5,
+    "reusedCells": 5,
+    "kernelSeconds": 2.834,
+    "charts": 0,
+    "providers": [
+      "Relace",
+      "OpenInference"
+    ]
+  },
+  {
+    "threadId": "m975hewqfvpkh5zk6j031ccqgn8fdfpt",
+    "prompt": "show me",
+    "state": "failed",
+    "failedMessages": 0,
+    "hasFinalAnswer": false,
+    "elapsedSeconds": 540.001,
+    "toolCalls": 4,
+    "notebookExecutions": 2,
+    "skippedDuplicates": 0,
+    "errors": 4,
+    "networkRequests": 0,
+    "reusedCells": 2,
+    "kernelSeconds": 0.425,
+    "charts": 0,
+    "providers": [
+      "OpenInference"
+    ]
+  },
+  {
+    "threadId": "m97c7nxns3dfjvtwkb20pzr2ax8fcb3j",
+    "prompt": "hey tell me about my orders in the past week",
+    "state": "complete",
+    "failedMessages": 0,
+    "hasFinalAnswer": true,
+    "elapsedSeconds": 47.637,
+    "toolCalls": 6,
+    "notebookExecutions": 4,
+    "skippedDuplicates": 0,
+    "errors": 2,
+    "networkRequests": 3,
+    "reusedCells": 3,
+    "kernelSeconds": 1.961,
+    "charts": 1,
+    "providers": [
+      "StreamLake",
+      "Together"
+    ]
+  },
+  {
+    "threadId": "m979c7s78878h8k3vd4xqpgpx98fdj3n",
+    "prompt": "tell me about my users",
+    "state": "complete",
+    "failedMessages": 0,
+    "hasFinalAnswer": true,
+    "elapsedSeconds": 86.936,
+    "toolCalls": 4,
+    "notebookExecutions": 4,
+    "skippedDuplicates": 0,
+    "errors": 1,
+    "networkRequests": 4,
+    "reusedCells": 3,
+    "kernelSeconds": 2.664,
+    "charts": 1,
+    "providers": [
+      "Morph"
+    ]
+  },
+  {
+    "threadId": "m976cep09nsk1mthrcgqj5a9fh8fdrdr",
+    "prompt": "hey tell me about my orders in the past week with a chart of orders over time",
+    "state": "complete",
+    "failedMessages": 0,
+    "hasFinalAnswer": true,
+    "elapsedSeconds": 31.133,
+    "toolCalls": 3,
+    "notebookExecutions": 3,
+    "skippedDuplicates": 0,
+    "errors": 0,
+    "networkRequests": 2,
+    "reusedCells": 2,
+    "kernelSeconds": 2.054,
+    "charts": 1,
+    "providers": [
+      "Relace"
+    ]
+  },
+  {
+    "threadId": "m973qcrx0mpa8f0jdway9n9zk18fcy4j",
+    "prompt": "hey tell me about my orders in the past week",
+    "state": "complete",
+    "failedMessages": 0,
+    "hasFinalAnswer": true,
+    "elapsedSeconds": 22.362,
+    "toolCalls": 3,
+    "notebookExecutions": 3,
+    "skippedDuplicates": 0,
+    "errors": 0,
+    "networkRequests": 2,
+    "reusedCells": 2,
+    "kernelSeconds": 1.511,
+    "charts": 0,
+    "providers": [
+      "Together"
+    ]
+  },
+  {
+    "threadId": "m973qcrx0mpa8f0jdway9n9zk18fcy4j",
+    "prompt": "show me",
+    "state": "complete",
+    "failedMessages": 0,
+    "hasFinalAnswer": true,
+    "elapsedSeconds": 21.69,
+    "toolCalls": 3,
+    "notebookExecutions": 3,
+    "skippedDuplicates": 0,
+    "errors": 1,
+    "networkRequests": 0,
+    "reusedCells": 3,
+    "kernelSeconds": 1.039,
+    "charts": 1,
+    "providers": [
+      "Together"
+    ]
+  },
+  {
+    "threadId": "m973qcrx0mpa8f0jdway9n9zk18fcy4j",
+    "prompt": "Show the existing 2x2 figure again using fig.show(), no new reads.",
+    "state": "complete",
+    "failedMessages": 0,
+    "hasFinalAnswer": true,
+    "elapsedSeconds": 2.333,
+    "toolCalls": 1,
+    "notebookExecutions": 1,
+    "skippedDuplicates": 0,
+    "errors": 0,
+    "networkRequests": 0,
+    "reusedCells": 1,
+    "kernelSeconds": 0.011,
+    "charts": 1,
+    "providers": [
+      "Together"
+    ]
+  },
+  {
+    "threadId": "m973qcrx0mpa8f0jdway9n9zk18fcy4j",
+    "prompt": "how do orders happen over time chart pls",
+    "state": "complete",
+    "failedMessages": 0,
+    "hasFinalAnswer": true,
+    "elapsedSeconds": 15.362,
+    "toolCalls": 2,
+    "notebookExecutions": 2,
+    "skippedDuplicates": 0,
+    "errors": 1,
+    "networkRequests": 0,
+    "reusedCells": 2,
+    "kernelSeconds": 0.186,
+    "charts": 1,
+    "providers": [
+      "Relace",
+      "Together"
+    ]
+  },
+  {
+    "threadId": "m973qcrx0mpa8f0jdway9n9zk18fcy4j",
+    "prompt": "Investigate this SKU using the notebook records already loaded. Show its order statuses in a sortable table using display_table and a Plotly bar chart. Only read; summarize briefly.",
+    "state": "complete",
+    "failedMessages": 0,
+    "hasFinalAnswer": true,
+    "elapsedSeconds": 10.225,
+    "toolCalls": 1,
+    "notebookExecutions": 1,
+    "skippedDuplicates": 0,
+    "errors": 0,
+    "networkRequests": 0,
+    "reusedCells": 1,
+    "kernelSeconds": 0.172,
+    "charts": 1,
+    "providers": [
+      "Relace"
+    ]
+  },
+  {
+    "threadId": "m973qcrx0mpa8f0jdway9n9zk18fcy4j",
+    "prompt": "Investigate this specific failed order. Reuse the loaded records and display one sortable table with its ID, timestamp, status, and any failure fields that actually exist. Summarize only observed facts in two sentences.",
+    "state": "complete",
+    "failedMessages": 0,
+    "hasFinalAnswer": true,
+    "elapsedSeconds": 12.286,
+    "toolCalls": 2,
+    "notebookExecutions": 2,
+    "skippedDuplicates": 0,
+    "errors": 0,
+    "networkRequests": 0,
+    "reusedCells": 2,
+    "kernelSeconds": 0.035,
+    "charts": 0,
+    "providers": [
+      "Relace"
+    ]
+  }
+]

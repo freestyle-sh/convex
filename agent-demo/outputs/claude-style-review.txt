@@ -1,0 +1,93 @@
+# Workbench design review
+
+## 1) Diagnosis
+
+**Visual problems**
+- **Nothing on screen leads.** The answer is 15px `zinc-700` text with a 28px line height in Helvetica Neue, and its bold subheads are also 15px, so they barely register. Numbers, dates and IDs are set in the same proportional face as the prose, which is why it reads as a generic chat app rather than an investigation tool.
+- **The chart looks like stock Plotly.** The bars are `#636efa` because Plotly Express writes `marker.color` onto each trace, which overrides your `colorway`. The chart also has a centered 17px title, vertical gridlines, and a "Chart / Data / Select a point…" header line above a second title. It's the most visible part of the product, and it's the part you've styled least.
+- **The chrome is louder than the work.** The 23px `font-black` wordmark, the "Workbench" name with a plum dot above every answer, the "› Conversation" breadcrumb, and a full-width bordered *Execution details* card above the answer all take space before any content.
+- **Content gets cut off at the composer.** Chart axes are sliced off at the composer's edge with no transition. The composer is about 124px tall when empty.
+- **The sidebar is airy but holds little.** Each row is about 64px. The selected row has both a fill and a border.
+
+**Content and behavior problems (not styling)**
+- Every chat is titled "hey tell me about my orders in th…". Chats need generated titles.
+- Totals are written out as bullet prose when they should be a small table.
+- The "Reminder: fixture dataset" line is noise.
+- The 09‑30 bar shows a partial day without saying so.
+- The Plotly figure title repeats the heading in the answer.
+
+## 2) Direction: "lab notebook"
+
+Treat each answer as a document cell with its evidence attached below it, similar to Observable or a quiet Jupyter.
+
+- **Type:** use the system sans for prose and monospace for anything that is data (numbers, IDs, table cells, chart ticks, execution lines).
+- **Surfaces and lines:** white surfaces with hairline borders and no cards inside cards.
+- **Plum:** keep it as the only accent. Use it for selection, focus, and the first chart series only.
+- **Density:** about 32px rows everywhere.
+- **Convex influence:** comes through the plum and dense, dashboard-like data treatment, not yellow.
+
+*Alternate:* an ink-only palette, using plum for focus only and drawing charts in `#2b2730` with plum just for the selected point. It's starker and more "instrument-like", but has less warmth.
+
+## 3) Five changes, in priority order
+
+1. **`PlotlyChart.tsx` layout and header.**
+   - **Before:** Plotly defaults, 340px tall, title inside the plot.
+   - **After:**
+     - Remap traces that still carry the default px colors (`#636efa`, `#EF553B`, …) to your palette, with `marker.line.width: 0`.
+     - Set `title: undefined` and move the title into the figure header (left aligned, 13px semibold). Put a Chart/Data segmented toggle on the right and drop the hint text.
+     - Set `xaxis.showgrid: false`, `yaxis.rangemode: "tozero"`, `zeroline` to `line-strong`, mono 11px tick labels, `bargap: 0.35`, height 280, and `displayModeBar: "hover"`.
+     - Turn the selection strip into the main affordance: a row with `cursor-pointer` and the text "Click a bar to investigate".
+2. **`MessageView` / `ExecutionDetails` (`App.tsx:1180-1295`).**
+   - Remove the dot + `appName` row.
+   - Replace the execution card with a borderless single mono line: `✓ ran 1 cell · 2.4s ›` in `ink-3`, 12px.
+   - When expanded, show the cells with a 2px `line` left rule, like notebook gutters.
+   - Wrap `MessageResults` in a block with `mt-8`, a hairline, and a small "Results" label so it's clear the evidence sits below the answer.
+3. **Prose styles (`.markdown`, `App.tsx:1202`).**
+   - Body: 15px/24px in `ink` (#2b2730).
+   - h2/h3: 13px semibold `ink`, `mt-6 mb-2`, with a slight tracking tweak but no caps.
+   - `li`: `my-0.5`.
+   - Use `tabular-nums` everywhere.
+   - Inline code: mono 13px on `field` with no extra padding inflation.
+4. **Composer (`PromptBar.tsx`, `App.tsx:770`).**
+   - Textarea `min-h-16` → `min-h-11`, with `rows={1}`.
+   - Total height: about 124px → about 92px.
+   - Add a 24px `bg-gradient-to-t from-canvas` fade above the composer. This is a functional fade so content doesn't get chopped, not decoration.
+   - Keep the model picker exactly where it is.
+5. **Sidebar and header (`App.tsx:546-645`).**
+   - Wordmark: 23px black → 15px semibold, `tracking-tight`.
+   - Chat rows: put the title and age on one line (age right-aligned, mono 11px, `ink-3`), `py-2`, about 34px tall.
+   - Selected row: `bg-hover` only, no border.
+   - Header: 56px → 48px, and replace the "Conversation" breadcrumb with the chat title.
+   - **Plus `ResultTable.tsx`:** clicking a row selects it, and the checkbox appears only on hover or when selected. Right-align numeric columns, use mono cells, and give the header `bg-surface` instead of `field`.
+
+## 4) Token spec
+
+```
+--font-sans: ui-sans-serif, -apple-system, "SF Pro Text", system-ui, sans-serif;
+--font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+text: body 15/24 · ui 13/20 · meta 12/16 · micro/mono-ticks 11/16
+ink #2b2730 · ink-2 #57515e · ink-3 #79747f   (leave zinc ramp)
+line #ebe9ee · line-strong #d4d0d9 · field #f4f3f6 · hover #efedf2 · selection #f3e9f1
+accent plum #8d2676 (selection ring, focus, series 1 only)
+chart palette: #8d2676 #4f6d9a #3f7d6e #b5654f #6e6a78
+radius: 8 (figures/tables/composer), 6 (buttons/rows)
+heights: header 48 · sidebar row 34 · table row 32 · toolbar 36 · chart 280 (subplots 520)
+spacing: message gap 32 · answer→results 32 · result→result 16 · column max-w-3xl
+borders: 1px line; no shadows except popovers
+```
+
+No new dependencies are needed.
+
+## 5) Keep as-is
+
+- The neutral white canvas and `#f7f7f8` sidebar.
+- Plum as the single accent.
+- The Settings link in the sidebar.
+- Model and provider switching in the composer, including the picker popover.
+- Results below the answer.
+- Collapsed-by-default execution details.
+- The selection chip in the composer.
+- The "Investigate this" handoff.
+- Rounded-full suggestion chips (but keep them `ink-2` and sparse).
+
+Don't reintroduce a logo, status pills, shadows on the selected chat, or a footer.

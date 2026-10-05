@@ -1,0 +1,19 @@
+{
+  "name": "meridian-supply-demo",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "convex": "1.46.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^6.0.2"
+  },
+  "scripts": {
+    "generate": "node scripts/generate.mjs",
+    "bundle": "python3 scripts/bundle.py",
+    "test": "node --test scripts/generate.test.mjs",
+    "typecheck": "tsc --noEmit -p convex/tsconfig.json",
+    "deploy:dev": "convex dev --once --tail-logs disable"
+  }
+}

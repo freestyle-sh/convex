@@ -1,0 +1,289 @@
+[
+  {
+    "threadId": "m97djhqs22vn8k6ba6bs3k8g4x8fdzag",
+    "prompt": "what tables exist in the database?\n",
+    "state": "complete",
+    "failedMessages": 0,
+    "hasFinalAnswer": true,
+    "elapsedSeconds": 57.369,
+    "toolCalls": 2,
+    "notebookExecutions": 2,
+    "skippedDuplicates": 0,
+    "errors": 0,
+    "networkRequests": 2,
+    "reusedCells": 1,
+    "kernelSeconds": 0.874,
+    "charts": 0,
+    "providers": [
+      "Wafer"
+    ]
+  },
+  {
+    "threadId": "m97djhqs22vn8k6ba6bs3k8g4x8fdzag",
+    "prompt": "who are my customers",
+    "state": "complete",
+    "failedMessages": 0,
+    "hasFinalAnswer": true,
+    "elapsedSeconds": 149.336,
+    "toolCalls": 21,
+    "notebookExecutions": 8,
+    "skippedDuplicates": 0,
+    "errors": 13,
+    "networkRequests": 8,
+    "reusedCells": 8,
+    "kernelSeconds": 6.072,
+    "charts": 0,
+    "providers": [
+      "Wafer"
+    ]
+  },
+  {
+    "threadId": "m97djhqs22vn8k6ba6bs3k8g4x8fdzag",
+    "prompt": "chart based on what kind of user they were",
+    "state": "complete",
+    "failedMessages": 0,
+    "hasFinalAnswer": false,
+    "elapsedSeconds": 176.69,
+    "toolCalls": 14,
+    "notebookExecutions": 8,
+    "skippedDuplicates": 0,
+    "errors": 6,
+    "networkRequests": 8,
+    "reusedCells": 8,
+    "kernelSeconds": 5.544,
+    "charts": 8,
+    "providers": [
+      "Wafer"
+    ]
+  },
+  {
+    "threadId": "m97djhqs22vn8k6ba6bs3k8g4x8fdzag",
+    "prompt": "plan i mean",
+    "state": "complete",
+    "failedMessages": 0,
+    "hasFinalAnswer": true,
+    "elapsedSeconds": 3.315,
+    "toolCalls": 0,
+    "notebookExecutions": 0,
+    "skippedDuplicates": 0,
+    "errors": 0,
+    "networkRequests": 0,
+    "reusedCells": 0,
+    "kernelSeconds": 0,
+    "charts": 0,
+    "providers": [
+      "Wafer"
+    ]
+  },
+  {
+    "threadId": "m97bvg5vx8m1atjc6s16kxs1fn8fdgdd",
+    "prompt": "what tables exist in the database?",
+    "state": "complete",
+    "failedMessages": 1,
+    "hasFinalAnswer": false,
+    "elapsedSeconds": 66.93,
+    "toolCalls": 1,
+    "notebookExecutions": 1,
+    "skippedDuplicates": 0,
+    "errors": 0,
+    "networkRequests": 1,
+    "reusedCells": 0,
+    "kernelSeconds": 0.506,
+    "charts": 0,
+    "providers": [
+      "Inceptron"
+    ]
+  },
+  {
+    "threadId": "m97bvg5vx8m1atjc6s16kxs1fn8fdgdd",
+    "prompt": "what tables exist in the database?",
+    "state": "complete",
+    "failedMessages": 0,
+    "hasFinalAnswer": true,
+    "elapsedSeconds": 2.854,
+    "toolCalls": 0,
+    "notebookExecutions": 0,
+    "skippedDuplicates": 0,
+    "errors": 0,
+    "networkRequests": 0,
+    "reusedCells": 0,
+    "kernelSeconds": 0,
+    "charts": 0,
+    "providers": [
+      "Together"
+    ]
+  },
+  {
+    "threadId": "m97bvg5vx8m1atjc6s16kxs1fn8fdgdd",
+    "prompt": "who are my customers",
+    "state": "complete",
+    "failedMessages": 0,
+    "hasFinalAnswer": true,
+    "elapsedSeconds": 37.336,
+    "toolCalls": 3,
+    "notebookExecutions": 3,
+    "skippedDuplicates": 0,
+    "errors": 1,
+    "networkRequests": 2,
+    "reusedCells": 3,
+    "kernelSeconds": 1.122,
+    "charts": 0,
+    "providers": [
+      "Modal",
+      "Together"
+    ]
+  },
+  {
+    "threadId": "m971xs7hdjeacs1q744p0z7ens8fcb6c",
+    "prompt": "what tables exist in the database?",
+    "state": "complete",
+    "failedMessages": 0,
+    "hasFinalAnswer": true,
+    "elapsedSeconds": 111.499,
+    "toolCalls": 2,
+    "notebookExecutions": 1,
+    "skippedDuplicates": 0,
+    "errors": 1,
+    "networkRequests": 1,
+    "reusedCells": 0,
+    "kernelSeconds": 0.64,
+    "charts": 0,
+    "providers": [
+      "Together"
+    ]
+  },
+  {
+    "threadId": "m971xs7hdjeacs1q744p0z7ens8fcb6c",
+    "prompt": "who are my customers",
+    "state": "complete",
+    "failedMessages": 0,
+    "hasFinalAnswer": true,
+    "elapsedSeconds": 21.043,
+    "toolCalls": 2,
+    "notebookExecutions": 2,
+    "skippedDuplicates": 0,
+    "errors": 0,
+    "networkRequests": 1,
+    "reusedCells": 2,
+    "kernelSeconds": 0.652,
+    "charts": 0,
+    "providers": [
+      "Together"
+    ]
+  },
+  {
+    "threadId": "m971xs7hdjeacs1q744p0z7ens8fcb6c",
+    "prompt": "chart based on what kind of user they were",
+    "state": "complete",
+    "failedMessages": 0,
+    "hasFinalAnswer": true,
+    "elapsedSeconds": 7.092,
+    "toolCalls": 1,
+    "notebookExecutions": 1,
+    "skippedDuplicates": 0,
+    "errors": 0,
+    "networkRequests": 0,
+    "reusedCells": 1,
+    "kernelSeconds": 0.158,
+    "charts": 1,
+    "providers": [
+      "Together"
+    ]
+  },
+  {
+    "threadId": "m971xs7hdjeacs1q744p0z7ens8fcb6c",
+    "prompt": "Check the live database again: what tables exist?",
+    "state": "complete",
+    "failedMessages": 0,
+    "hasFinalAnswer": true,
+    "elapsedSeconds": 23.559,
+    "toolCalls": 1,
+    "notebookExecutions": 1,
+    "skippedDuplicates": 0,
+    "errors": 0,
+    "networkRequests": 1,
+    "reusedCells": 1,
+    "kernelSeconds": 0.592,
+    "charts": 0,
+    "providers": [
+      "Together",
+      "Parasail"
+    ]
+  },
+  {
+    "threadId": "m971xs7hdjeacs1q744p0z7ens8fcb6c",
+    "prompt": "Refresh the customers from the database and summarize their plans.",
+    "state": "complete",
+    "failedMessages": 0,
+    "hasFinalAnswer": true,
+    "elapsedSeconds": 13.849,
+    "toolCalls": 1,
+    "notebookExecutions": 1,
+    "skippedDuplicates": 0,
+    "errors": 0,
+    "networkRequests": 1,
+    "reusedCells": 1,
+    "kernelSeconds": 0.758,
+    "charts": 0,
+    "providers": [
+      "Together"
+    ]
+  },
+  {
+    "threadId": "m97896cf0gpnyemd0dngkn8smd8fcgc0",
+    "prompt": "what tables exist in the database?",
+    "state": "complete",
+    "failedMessages": 0,
+    "hasFinalAnswer": true,
+    "elapsedSeconds": 42.652,
+    "toolCalls": 1,
+    "notebookExecutions": 1,
+    "skippedDuplicates": 0,
+    "errors": 0,
+    "networkRequests": 1,
+    "reusedCells": 0,
+    "kernelSeconds": 0.625,
+    "charts": 0,
+    "providers": [
+      "Together"
+    ]
+  },
+  {
+    "threadId": "m97896cf0gpnyemd0dngkn8smd8fcgc0",
+    "prompt": "who are my customers",
+    "state": "complete",
+    "failedMessages": 0,
+    "hasFinalAnswer": true,
+    "elapsedSeconds": 17.726,
+    "toolCalls": 2,
+    "notebookExecutions": 2,
+    "skippedDuplicates": 0,
+    "errors": 0,
+    "networkRequests": 1,
+    "reusedCells": 2,
+    "kernelSeconds": 0.869,
+    "charts": 0,
+    "providers": [
+      "Together"
+    ]
+  },
+  {
+    "threadId": "m97896cf0gpnyemd0dngkn8smd8fcgc0",
+    "prompt": "chart based on what kind of user they were",
+    "state": "complete",
+    "failedMessages": 0,
+    "hasFinalAnswer": true,
+    "elapsedSeconds": 5.216,
+    "toolCalls": 1,
+    "notebookExecutions": 1,
+    "skippedDuplicates": 0,
+    "errors": 0,
+    "networkRequests": 0,
+    "reusedCells": 1,
+    "kernelSeconds": 0.059,
+    "charts": 1,
+    "providers": [
+      "Together"
+    ]
+  }
+]

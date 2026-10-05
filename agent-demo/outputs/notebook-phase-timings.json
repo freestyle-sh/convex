@@ -1,0 +1,70 @@
+{
+  "measuredAt": "2026-09-30",
+  "samples": [
+    {
+      "runId": "jn717pbv6atwkyrzy09bzgqbdn8fcdd2",
+      "reused": true,
+      "totalMs": 7607,
+      "kernelMs": 541,
+      "phases": {
+        "sessionReady": 236,
+        "networkSetup": 4888,
+        "writeCell": 105,
+        "executeCell": 818,
+        "receipts": 34,
+        "networkCleanup": 1517,
+        "releaseSession": 4
+      },
+      "network": {
+        "mintKeys": 288,
+        "createRelays": 140,
+        "injectionRules": 1732,
+        "writeRelays": 43,
+        "startRelays": 265,
+        "notebookRoutes": 2408,
+        "deleteRoutes": 1244,
+        "deleteRelays": 49,
+        "revokeKeys": 224
+      }
+    },
+    {
+      "runId": "jn7bqcfk0ntb3674w0hq8ez6cx8fcbbr",
+      "reused": true,
+      "totalMs": 6179,
+      "kernelMs": 509,
+      "phases": {
+        "sessionReady": 91,
+        "networkSetup": 4008,
+        "writeCell": 37,
+        "executeCell": 591,
+        "receipts": 32,
+        "networkCleanup": 1415,
+        "releaseSession": 4
+      },
+      "network": {
+        "mintKeys": 292,
+        "createRelays": 125,
+        "injectionRules": 1482,
+        "writeRelays": 39,
+        "startRelays": 329,
+        "notebookRoutes": 1731,
+        "deleteRoutes": 1128,
+        "deleteRelays": 54,
+        "revokeKeys": 232
+      }
+    },
+    {
+      "runId": "jn7ezz6705fq8h26wf0yk3vay18fdbw7",
+      "reused": true,
+      "totalMs": 239,
+      "kernelMs": 7,
+      "phases": {
+        "sessionReady": 86,
+        "writeCell": 36,
+        "executeCell": 112,
+        "networkCleanup": 0,
+        "releaseSession": 5
+      }
+    }
+  ]
+}

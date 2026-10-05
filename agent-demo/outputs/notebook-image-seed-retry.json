@@ -1,0 +1,11 @@
+{
+  "mode": "seed",
+  "networkResults": [],
+  "pythonDurationMs": 23,
+  "reused": false,
+  "runId": "jn71ykbb4g84c8h7yjcbggk42n8fdgg5",
+  "status": "ok",
+  "stderr": "",
+  "stdout": "isolated True True\nseeded\n",
+  "totalDurationMs": 31955
+}

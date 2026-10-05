@@ -1,0 +1,17 @@
+{
+  "mode": "read",
+  "networkResults": [
+    {
+      "kind": "tables",
+      "state": "complete",
+      "successful": true
+    }
+  ],
+  "pythonDurationMs": 593,
+  "reused": false,
+  "runId": "jn73pkrm64xkqtdhp4nj4n7mg58fdksw",
+  "status": "ok",
+  "stderr": "",
+  "stdout": "isolated True True\n{\"continueCursor\": \"end\", \"isDone\": true, \"page\": [{\"name\": \"demoCustomers\"}, {\"name\": \"demoEvents\"}, {\"name\": \"demoInventory\"}, {\"name\": \"demoJobs\"}, {\"name\": \"demoOrders\"}]}\n",
+  "totalDurationMs": 6310
+}

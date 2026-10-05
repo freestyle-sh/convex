@@ -1,0 +1,68 @@
+[
+  {
+    "kind": "tables",
+    "state": "closed",
+    "leaseState": "revoked",
+    "sandboxState": "revoked"
+  },
+  {
+    "kind": "inlineQuery",
+    "state": "closed",
+    "leaseState": "revoked",
+    "sandboxState": "revoked"
+  },
+  {
+    "kind": "tables",
+    "state": "closed",
+    "leaseState": "revoked",
+    "sandboxState": "revoked"
+  },
+  {
+    "kind": "tables",
+    "state": "closed",
+    "leaseState": "revoked",
+    "sandboxState": "revoked"
+  },
+  {
+    "kind": "tables",
+    "state": "closed",
+    "leaseState": "revoked",
+    "sandboxState": "revoked"
+  },
+  {
+    "kind": "tables",
+    "state": "closed",
+    "leaseState": "revoked",
+    "sandboxState": "revoked"
+  },
+  {
+    "kind": "logs",
+    "state": "closed",
+    "leaseState": "revoked",
+    "sandboxState": "revoked"
+  },
+  {
+    "kind": "inlineQuery",
+    "state": "closed",
+    "leaseState": "revoked",
+    "sandboxState": "revoked"
+  },
+  {
+    "kind": "functions",
+    "state": "closed",
+    "leaseState": "revoked",
+    "sandboxState": "revoked"
+  },
+  {
+    "kind": "tables",
+    "state": "closed",
+    "leaseState": "revoked",
+    "sandboxState": "revoked"
+  },
+  {
+    "kind": "query",
+    "state": "closed",
+    "leaseState": "revoked",
+    "sandboxState": "revoked"
+  }
+]

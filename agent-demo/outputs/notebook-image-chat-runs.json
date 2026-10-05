@@ -1,0 +1,40 @@
+[
+  {
+    "threadId": "m97cjbh50tqpf8mjphr8hhsf658fcxf7",
+    "prompt": "what tables exist in the database?",
+    "state": "complete",
+    "failedMessages": 0,
+    "hasFinalAnswer": true,
+    "elapsedSeconds": 9.933,
+    "toolCalls": 1,
+    "notebookExecutions": 1,
+    "skippedDuplicates": 0,
+    "errors": 0,
+    "networkRequests": 1,
+    "reusedCells": 0,
+    "kernelSeconds": 0.449,
+    "charts": 0,
+    "providers": [
+      "Together"
+    ]
+  },
+  {
+    "threadId": "m97cjbh50tqpf8mjphr8hhsf658fcxf7",
+    "prompt": "Refresh the table list once to confirm it is still current.",
+    "state": "complete",
+    "failedMessages": 0,
+    "hasFinalAnswer": true,
+    "elapsedSeconds": 2.969,
+    "toolCalls": 1,
+    "notebookExecutions": 1,
+    "skippedDuplicates": 0,
+    "errors": 0,
+    "networkRequests": 1,
+    "reusedCells": 1,
+    "kernelSeconds": 0.535,
+    "charts": 0,
+    "providers": [
+      "Together"
+    ]
+  }
+]

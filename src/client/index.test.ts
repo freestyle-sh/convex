@@ -62,6 +62,39 @@ function actionContext(managementToken = "reservation-token") {
 }
 
 describe("Freestyle client", () => {
+  test("passes snapshot options to Freestyle without leaking them into the record lookup", async () => {
+    const { ctx, record } = actionContext();
+    ctx.runQuery.mockImplementation(async (_ref: unknown, args: unknown) => {
+      expect(args).toEqual({ ownerId: "user-a", slug: "workspace-a" });
+      return { ...record, vmId: "vm-test" };
+    });
+    let requestBody: unknown;
+    const fetch = vi.fn(
+      async (_input: RequestInfo | URL, init?: RequestInit) => {
+        requestBody = JSON.parse(String(init?.body));
+        return Response.json({
+          snapshotId: "snapshot-test",
+          sourceVmId: "vm-test",
+          snapshot: { id: "snapshot-test" },
+        });
+      },
+    );
+    const freestyle = new Freestyle(component, {
+      apiKey: "test-key",
+      baseUrl: "https://api.test",
+      fetch,
+    });
+    const options = { displayName: "Clean runtime", autoDeleteSeconds: 604800 };
+    const result = await freestyle.snapshot(ctx, {
+      ownerId: "user-a",
+      slug: "workspace-a",
+      options,
+    });
+    expect(result.snapshotId).toBe("snapshot-test");
+    expect(requestBody).toEqual(options);
+    expect(fetch).toHaveBeenCalledOnce();
+  });
+
   test("creates a tagged VM and links the reservation", async () => {
     const { ctx, runMutation } = actionContext();
     let requestBody: any;

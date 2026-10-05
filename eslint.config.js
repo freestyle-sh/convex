@@ -6,8 +6,12 @@ import tseslint from "typescript-eslint";
 export default [
   {
     ignores: [
-      "dist/**",
+      "**/dist/**",
+      "**/.convex/**",
+      "**/.vercel/**",
+      "**/.tanstack/**",
       "**/_generated/**",
+      "**/routeTree.gen.ts",
       "*.config.{js,mjs,cjs,ts}",
       "example/**/*.config.{js,mjs,cjs,ts}",
     ],
@@ -24,6 +28,20 @@ export default [
   },
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
+  {
+    files: ["**/scripts/*.mjs"],
+    languageOptions: { globals: globals.node },
+  },
+  {
+    files: ["**/*.test.{ts,mjs}"],
+    rules: {
+      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        { argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
+      ],
+    },
+  },
   {
     files: ["src/**/*.ts", "example/convex/**/*.ts"],
     languageOptions: { globals: globals.worker },

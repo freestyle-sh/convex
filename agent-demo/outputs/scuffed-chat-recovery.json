@@ -1,0 +1,79 @@
+[
+  {
+    "threadId": "m975hewqfvpkh5zk6j031ccqgn8fdfpt",
+    "prompt": "hey tell me about my orders in the past week\n",
+    "state": "complete",
+    "failedMessages": 0,
+    "hasFinalAnswer": false,
+    "elapsedSeconds": 74.834,
+    "toolCalls": 7,
+    "notebookExecutions": 6,
+    "skippedDuplicates": 0,
+    "errors": 3,
+    "networkRequests": 5,
+    "reusedCells": 5,
+    "kernelSeconds": 2.834,
+    "charts": 0,
+    "providers": [
+      "Relace",
+      "OpenInference"
+    ]
+  },
+  {
+    "threadId": "m975hewqfvpkh5zk6j031ccqgn8fdfpt",
+    "prompt": "show me",
+    "state": "failed",
+    "failedMessages": 0,
+    "hasFinalAnswer": false,
+    "elapsedSeconds": 540.001,
+    "toolCalls": 4,
+    "notebookExecutions": 2,
+    "skippedDuplicates": 0,
+    "errors": 4,
+    "networkRequests": 0,
+    "reusedCells": 2,
+    "kernelSeconds": 0.425,
+    "charts": 0,
+    "providers": [
+      "OpenInference"
+    ]
+  },
+  {
+    "threadId": "m975hewqfvpkh5zk6j031ccqgn8fdfpt",
+    "prompt": "hey tell me about my orders in the past week, with a chart of orders over time",
+    "state": "complete",
+    "failedMessages": 0,
+    "hasFinalAnswer": true,
+    "elapsedSeconds": 84.602,
+    "toolCalls": 3,
+    "notebookExecutions": 3,
+    "skippedDuplicates": 0,
+    "errors": 1,
+    "networkRequests": 2,
+    "reusedCells": 3,
+    "kernelSeconds": 29.856,
+    "charts": 3,
+    "providers": [
+      "Relace"
+    ]
+  },
+  {
+    "threadId": "m975hewqfvpkh5zk6j031ccqgn8fdfpt",
+    "prompt": "Refresh the orders data and summarize the past week with orders over time and paid amount over time charts.",
+    "state": "complete",
+    "failedMessages": 0,
+    "hasFinalAnswer": true,
+    "elapsedSeconds": 21.855,
+    "toolCalls": 1,
+    "notebookExecutions": 1,
+    "skippedDuplicates": 0,
+    "errors": 0,
+    "networkRequests": 1,
+    "reusedCells": 1,
+    "kernelSeconds": 0.799,
+    "charts": 2,
+    "providers": [
+      "Relace"
+    ]
+  }
+]

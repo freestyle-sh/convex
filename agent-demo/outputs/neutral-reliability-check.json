@@ -1,0 +1,98 @@
+[
+  {
+    "threadId": "m973qcrx0mpa8f0jdway9n9zk18fcy4j",
+    "prompt": "hey tell me about my orders in the past week",
+    "state": "complete",
+    "failedMessages": 0,
+    "hasFinalAnswer": true,
+    "elapsedSeconds": 22.362,
+    "toolCalls": 3,
+    "notebookExecutions": 3,
+    "skippedDuplicates": 0,
+    "errors": 0,
+    "networkRequests": 2,
+    "reusedCells": 2,
+    "kernelSeconds": 1.511,
+    "charts": 0,
+    "providers": [
+      "Together"
+    ]
+  },
+  {
+    "threadId": "m973qcrx0mpa8f0jdway9n9zk18fcy4j",
+    "prompt": "show me",
+    "state": "complete",
+    "failedMessages": 0,
+    "hasFinalAnswer": true,
+    "elapsedSeconds": 21.69,
+    "toolCalls": 3,
+    "notebookExecutions": 3,
+    "skippedDuplicates": 0,
+    "errors": 1,
+    "networkRequests": 0,
+    "reusedCells": 3,
+    "kernelSeconds": 1.039,
+    "charts": 1,
+    "providers": [
+      "Together"
+    ]
+  },
+  {
+    "threadId": "m973qcrx0mpa8f0jdway9n9zk18fcy4j",
+    "prompt": "Show the existing 2x2 figure again using fig.show(), no new reads.",
+    "state": "complete",
+    "failedMessages": 0,
+    "hasFinalAnswer": true,
+    "elapsedSeconds": 2.333,
+    "toolCalls": 1,
+    "notebookExecutions": 1,
+    "skippedDuplicates": 0,
+    "errors": 0,
+    "networkRequests": 0,
+    "reusedCells": 1,
+    "kernelSeconds": 0.011,
+    "charts": 1,
+    "providers": [
+      "Together"
+    ]
+  },
+  {
+    "threadId": "m973qcrx0mpa8f0jdway9n9zk18fcy4j",
+    "prompt": "how do orders happen over time chart pls",
+    "state": "complete",
+    "failedMessages": 0,
+    "hasFinalAnswer": true,
+    "elapsedSeconds": 15.362,
+    "toolCalls": 2,
+    "notebookExecutions": 2,
+    "skippedDuplicates": 0,
+    "errors": 1,
+    "networkRequests": 0,
+    "reusedCells": 2,
+    "kernelSeconds": 0.186,
+    "charts": 1,
+    "providers": [
+      "Relace",
+      "Together"
+    ]
+  },
+  {
+    "threadId": "m976cep09nsk1mthrcgqj5a9fh8fdrdr",
+    "prompt": "hey tell me about my orders in the past week with a chart of orders over time",
+    "state": "complete",
+    "failedMessages": 0,
+    "hasFinalAnswer": true,
+    "elapsedSeconds": 31.133,
+    "toolCalls": 3,
+    "notebookExecutions": 3,
+    "skippedDuplicates": 0,
+    "errors": 0,
+    "networkRequests": 2,
+    "reusedCells": 2,
+    "kernelSeconds": 2.054,
+    "charts": 1,
+    "providers": [
+      "Relace"
+    ]
+  }
+]

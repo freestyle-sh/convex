@@ -1,0 +1,96 @@
+{
+  "date": "2026-09-30",
+  "newNotebookInitializationMs": 32358,
+  "samples": [
+    {
+      "runId": "jn78yee5n5tpjbkzpxat6yp6en8fckpr",
+      "case": "prepared tables 1",
+      "totalMs": 846,
+      "kernelMs": 428,
+      "phases": {
+        "sessionReady": 116,
+        "networkSetup": 53,
+        "writeCell": 34,
+        "executeCell": 498,
+        "receipts": 78,
+        "networkCleanup": 61,
+        "releaseSession": 5
+      }
+    },
+    {
+      "runId": "jn78yee5n5tpjbkzpxat6yp6en8fckpr",
+      "case": "prepared tables 2",
+      "totalMs": 899,
+      "kernelMs": 445,
+      "phases": {
+        "sessionReady": 40,
+        "networkSetup": 122,
+        "writeCell": 35,
+        "executeCell": 506,
+        "receipts": 78,
+        "networkCleanup": 113,
+        "releaseSession": 5
+      }
+    },
+    {
+      "runId": "jn78yee5n5tpjbkzpxat6yp6en8fckpr",
+      "case": "prepared inlineQuery",
+      "totalMs": 1112,
+      "kernelMs": 767,
+      "phases": {
+        "sessionReady": 35,
+        "networkSetup": 55,
+        "writeCell": 116,
+        "executeCell": 829,
+        "receipts": 31,
+        "networkCleanup": 40,
+        "releaseSession": 5
+      }
+    },
+    {
+      "runId": "jn77rdqphmx78btqrmt8p2t55s8fd509",
+      "case": "provider outlier and resumed notebook, spare expired",
+      "totalMs": 8700,
+      "kernelMs": 535,
+      "phases": {
+        "sessionReady": 3910,
+        "networkSetup": 4006,
+        "writeCell": 32,
+        "executeCell": 641,
+        "receipts": 67,
+        "networkCleanup": 35,
+        "releaseSession": 6
+      }
+    },
+    {
+      "runId": "jn775hvtg3r65hfet1f5esb8bh8fc3w2",
+      "case": "normal chat waiting for warmup",
+      "totalMs": 3559,
+      "kernelMs": 614,
+      "phases": {
+        "sessionReady": 178,
+        "networkSetup": 2578,
+        "writeCell": 32,
+        "executeCell": 694,
+        "receipts": 32,
+        "networkCleanup": 38,
+        "releaseSession": 5
+      }
+    },
+    {
+      "runId": "jn760hjcqsr1jjy0ag711scr8s8fd8hm",
+      "case": "normal warm followup",
+      "totalMs": 1011,
+      "kernelMs": 586,
+      "phases": {
+        "sessionReady": 79,
+        "networkSetup": 55,
+        "writeCell": 34,
+        "executeCell": 736,
+        "receipts": 65,
+        "networkCleanup": 35,
+        "releaseSession": 5
+      }
+    }
+  ]
+}

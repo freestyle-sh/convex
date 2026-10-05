@@ -1,0 +1,47 @@
+[
+  {
+    "kernelMs": 428,
+    "kind": "tables",
+    "preparationMs": 4303,
+    "receipts": [
+      {
+        "kind": "tables",
+        "state": "complete",
+        "successful": true
+      }
+    ],
+    "status": "ok",
+    "stdout": "True\n",
+    "totalMs": 845
+  },
+  {
+    "kernelMs": 445,
+    "kind": "tables",
+    "preparationMs": 3272,
+    "receipts": [
+      {
+        "kind": "tables",
+        "state": "complete",
+        "successful": true
+      }
+    ],
+    "status": "ok",
+    "stdout": "True\n",
+    "totalMs": 900
+  },
+  {
+    "kernelMs": 767,
+    "kind": "inlineQuery",
+    "preparationMs": 4296,
+    "receipts": [
+      {
+        "kind": "inlineQuery",
+        "state": "complete",
+        "successful": true
+      }
+    ],
+    "status": "ok",
+    "stdout": "24.0\n",
+    "totalMs": 1112
+  }
+]

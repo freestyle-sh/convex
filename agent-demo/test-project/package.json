@@ -1,0 +1,22 @@
+{
+  "name": "convex-monitor-test-project",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "convex": "1.46.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "convex-test": "^0.0.55",
+    "vitest": "^4.1.11",
+    "typescript": "^6.0.2"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "deploy:dev": "convex dev --once --env-file target.env --tail-logs disable",
+    "seed": "convex run monitorDemo:seed --deployment terrific-stingray-366",
+    "traffic": "convex run monitorDemo:generateTraffic --deployment terrific-stingray-366",
+    "summary": "convex run monitorDemo:summary --deployment terrific-stingray-366"
+  }
+}

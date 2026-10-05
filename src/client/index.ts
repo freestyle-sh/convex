@@ -105,7 +105,10 @@ export class Freestyle {
     ctx: ReadCtx | MutationCtx | ActionCtx,
     args: { ownerId: string; slug: string },
   ) {
-    return await ctx.runQuery(this.component.vms.get, args);
+    return await ctx.runQuery(this.component.vms.get, {
+      ownerId: args.ownerId,
+      slug: args.slug,
+    });
   }
 
   async list(

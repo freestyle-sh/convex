@@ -1,0 +1,27 @@
+# Revised 5-step visual plan
+
+1. **Typography with a clear hierarchy.** Switch to the system sans (SF Pro on Mac) in place of Helvetica Neue.
+   - **Body text:** 15/24 in `ink`.
+   - **Headings:** h2 is 18/26 semibold and h3 is 16/24 semibold, in sentence case, with `mt-7 mb-2`.
+   - **Muted text:** keep at today's contrast.
+   - **Numbers:** `tabular-nums` everywhere.
+   - **Monospace:** only for IDs, code and table names.
+
+2. **Results sit wider than the prose.** Prose stays at about 680px. Charts and tables can extend to about 880px, centered on the same axis, with 32px above the first result and 16px between results.
+   - The figure's own title moves into its header, so the plot itself carries no title.
+   - Chart/Data and "Investigate" show up on hover or selection, with no labels.
+   - This is the main structural change: the answer reads as a document and the evidence looks attached to it, not like more chat bubbles.
+
+3. **Charts.** Recolor a trace only when it uses Plotly's default colors (the `#636efa`… sequence) and no color mapping is set. Leave semantic colors alone.
+   - Bars and histograms: start the y axis at zero.
+   - Line and scatter: keep their own axis ranges.
+   - All charts: drop vertical gridlines and lower the default height to 280px.
+
+4. **Reclaim vertical space.**
+   - **Composer:** a single-row textarea with the model picker and send button inline, so it's about 56px when empty and grows as you type.
+   - **Header:** 48px, showing the chat title in place of "Conversation".
+   - **Per-answer chrome:** remove the name/dot row, and make execution details a borderless one-line summary.
+
+5. **Provenance and tables.**
+   - **Fixture disclosure:** show it as a quiet metadata line in the answer's footer row, next to the provider (for example, `convex-monitor-shop-v1 · fixture data`).
+   - **Tables:** natural-language cells stay in the sans font. Numeric columns are right-aligned with tabular numbers, and only ID columns use monospace. Clicking a row selects it, and the checkbox appears on hover.

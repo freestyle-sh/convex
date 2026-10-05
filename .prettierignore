@@ -1,3 +1,12 @@
 dist
+.convex
+.vercel
+.tanstack
+# The app uses its own Tailwind formatter and dependency installation.
+agent-demo
+demo/dist
+demo/.convex/runtime
+demo/.vercel
 src/component/_generated
 example/convex/_generated
+agent-demo/src/routeTree.gen.ts

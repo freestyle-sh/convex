@@ -1,0 +1,5 @@
+{
+  "extends": "./convex/tsconfig.json",
+  "compilerOptions": { "types": ["node", "vite/client"] },
+  "include": ["convex", "tests"]
+}
